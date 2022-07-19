@@ -1,6 +1,8 @@
 spring:
   application:
     name: mall-member
+  main:
+    allow-bean-definition-overriding: true
   datasource:
     username: root
     password: root

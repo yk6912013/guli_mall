@@ -36,9 +36,12 @@ public class CouponController {
     @Value("${coupon.user.age}")
     private Integer age;
 
+    @Value("${spring.application.name}")
+    private String app;
+
     @RequestMapping("/test")
     public R test() {
-        return R.ok().put("name", name).put("age", age);
+        return R.ok().put("name", name).put("age", age).put("application", app);
     }
 
     /**

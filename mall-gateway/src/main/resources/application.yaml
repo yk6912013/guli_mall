@@ -9,10 +9,10 @@ spring:
       routes:
         #Query A 参数有A就行，Query B,C 参数B的值为C即可
         #实现针对于“http://localhost:88/zsy0216?url=baidu”，转发到“https://www.github.com/zsy0216”，
-        #- id: github_route
-        #  uri: https://www.github.com
-        #  predicates:
-        #    - Query=url,github
+#        - id: baidu_route
+#          uri: https://www.baidu.com
+#          predicates:
+#            - Query=url,baidu
         - id: product_route
           uri: lb://mall-product
           predicates:
